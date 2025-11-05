@@ -1,0 +1,13 @@
+-- Let's see how variables will work
+
+my_string = "Lae says: hello, world!"
+my_integer = 15
+my_boolean = true
+my_float = 1.6
+my_path = p"{#file.path}"
+my_function = function()
+  print("Message from a function variable")
+done
+
+--\\ About the Special Variables
+

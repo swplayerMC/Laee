@@ -1,0 +1,16 @@
+condition_one = true
+condition_two = false
+
+if condition_one then
+  print("Condition 1 is True")
+else
+  print("Condition 1 is False")
+ok
+
+if condition_one and condition_two then
+  print("Both conditions are true")
+elsif condition_one or condition_two then
+  print("One of the conditions is true")
+else
+  print("Both conditions are false")
+ok
