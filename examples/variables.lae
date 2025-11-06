@@ -4,10 +4,14 @@ my_string = "Lae says: hello, world!"
 my_integer = 15
 my_boolean = true
 my_float = 1.6
-my_path = p"{#file.path}"
+my_path = p"{#file}" -- variable names that start with '#'s are Special Variables
 my_function = function()
   print("Message from a function variable")
 done
 
---\\ About the Special Variables
-
+--\
+    About the Special Variables
+    They are defined variables that can get specific types or values
+    depending on the context that they're being used.
+    I'll create some examples soon.
+--/
