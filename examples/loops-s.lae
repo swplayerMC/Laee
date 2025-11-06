@@ -1,0 +1,12 @@
+-- simple for loop
+for 1 in 10 do
+  print("Tedting...")
+end
+
+-- simple foreach loop
+foreach counter: int in 10 do
+  print("Counter is in ${counter}")
+end
+
+-- I'll create and explain some more loops
+-- Like 'eachtime', 'lookfor' and so on...
