@@ -1,12 +1,12 @@
--- simple for loop
+// simple for loop
 for 1 in 10 do
   print("Tedting...")
-end
+ok
 
--- simple foreach loop
+// simple foreach loop
 foreach counter: int in 10 do
   print("Counter is in ${counter}")
-end
+ok
 
--- I'll create and explain some more loops
--- Like 'eachtime', 'lookfor' and so on...
+// I'll create and explain some more loops
+// Like 'eachtime', 'lookfor' and so on...
