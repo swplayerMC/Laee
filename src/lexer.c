@@ -15,7 +15,7 @@ token tokens[] = {0};
  * Param: '_char' gets the decimal ASCII code of the given
  * char type variable.
  * Return: a different number based on that keycode */
-int get_char_type(int _char) {
+int get_char_type(int ch) {
   // Digits, from 48 to 58
   if (ch >= 48 && ch <= 57) {
     return 1;
@@ -27,7 +27,7 @@ int get_char_type(int _char) {
     return 2;
   }
   // Space character
-  else if (ch == 32) >
+  else if (ch == 32)
     return 3;
   // else:
   return 0;
@@ -42,16 +42,16 @@ void lexer_lex(lae_file_t *lae_file) {
     char _char = lae_file->content[i];
     char prev_char;
     if (i > 0) prev_char = lae_file->content[i-1];
-    char temp[] = "";
+    char *temp;
     printf("%c", _char);
     switch (get_char_type(_char)) {
       case 1: // Digit
 	if (get_char_type(prev_char)==1) {
-	  concat(temp, _char);
+	  concat(temp, &_char);
 	}
 	else {
 	  temp = "";
-	  concat(temp, _char);
+	  concat(temp, &_char);
 	}
 	add_token(temp, tokens, i);
 	break;
